@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         String nombre ="Raul Alfonso";
         String apellido = "Tejada Castañeda";
-        //String.join(" ",nombre, apellido);
+        //String completo = String.join(" ", apellido, nombre);
         Toast toast = Toast.makeText(this, nombre+" "+apellido, Toast.LENGTH_LONG);
         toast.show();
     }
