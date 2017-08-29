@@ -6,13 +6,51 @@
     android:layout_height="match_parent"
     tools:context="com.example.marty.prctica4.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="349dp"
+        android:layout_height="488dp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="13dp">
+
+        <EditText
+            android:id="@+id/precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Precio"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:text="precio"
+            android:layout_below="@+id/cantidad"
+            android:layout_alignStart="@+id/cantidad" />
+
+        <EditText
+            android:id="@+id/cantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Cantidad"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="83dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/button"
+            android:layout_marginTop="17dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginEnd="31dp"
+            android:onClick="checar"
+            android:text="Button"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="447dp" />
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -1,10 +1,14 @@
 package com.example.marty.prctica4;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         //Toast toast = Toast.makeText(this, nombre+" "+apellido, Toast.LENGTH_LONG);
         //toast.show();
 
-        int torta = 40;
+        /*int torta = 40;
 
         int compra = 3;
 
@@ -25,7 +29,23 @@ public class MainActivity extends AppCompatActivity {
             T.show();
         }else{
             Toast M = Toast.makeText(this, "Paguele men!", Toast.LENGTH_LONG);
+            M.show( f);
+        }*/
+        ((Button)findViewById(R.id.button)).setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        EditText price   = (EditText)findViewById(R.id.precio);
+        EditText quantity   = (EditText)findViewById(R.id.cantidad);
+        if (Integer.parseInt(price.getText().toString())*Integer.parseInt(quantity.getText().toString()) > 80){
+            Toast T = Toast.makeText(this, "Soda Gratis WUUU!", Toast.LENGTH_LONG);
+            T.show();
+        }else{
+            Toast M = Toast.makeText(this, "Paguele men!", Toast.LENGTH_LONG);
             M.show();
         }
     }
+
+
 }
