@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.marty.imc.IMC"
+    android:gravity="bottom">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Para calcular su índice de masa corporal introduzca los siguientes datos:"
+        android:textSize="50px"
+        android:textAlignment="center"
+        android:layout_marginTop="40px"
+        android:layout_marginBottom="40px"
+        android:layout_weight="0" />
+
+    <EditText
+        android:hint="Su peso en Kg"
+        android:id="@+id/peso"
+        android:inputType="numberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40px"
+        android:layout_weight="0"/>
+
+    <EditText
+        android:hint="Su estatura en Mts"
+        android:id="@+id/estatura"
+        android:inputType="numberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40px"
+        android:layout_marginBottom="40px"
+        android:layout_weight="0"/>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:textAlignment="center"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/IMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:onClick="calcular"
+        android:text="CALCULAR IMC" />
+
+</LinearLayout>
