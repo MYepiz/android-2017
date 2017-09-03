@@ -36,7 +36,6 @@ public class IMC extends AppCompatActivity {
                 b = Double.parseDouble(estaturaEnMetros);
 
                 Double r = (d/(b*b));
-                r = Double.parseDouble(String.format("%.2f", d));
                 Double min = 19.0;
                 Double max = 24.9;
                 String tip = "";
