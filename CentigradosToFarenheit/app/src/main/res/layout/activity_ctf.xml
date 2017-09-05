@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layoutl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.marty.centigradostofarenheit.CTF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡INTRODUZCA LOS GRADOS EN CELCIUS PARA CONVERTIRLOS A FARENHEIT, WOOW!"
+        android:textAlignment="center"
+        android:textSize="50px"
+        android:layout_marginBottom="20px"/>
+
+    <EditText
+        android:id="@+id/cel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Grados celcius"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20px"/>
+
+    <TextView
+        android:id="@+id/far"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grados farenheit"
+        android:layout_gravity="center"
+        android:textSize="40px"
+        android:layout_marginBottom="20px"/>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:textSize="50px"
+        android:layout_marginBottom="20px"/>
+
+    <Button
+        android:id="@+id/GtF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="calcularClick"
+        android:text="CALCULAR A FARENHEIT" />
+
+</LinearLayout>
