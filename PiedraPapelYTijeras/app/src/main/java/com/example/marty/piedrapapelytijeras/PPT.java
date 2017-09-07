@@ -5,29 +5,15 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.os.Handler;
-import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
-
 import java.util.Random;
 
-//import com.squareup.seismic.ShakeDetector;implements ShakeDetector.Listener
-
 public class PPT extends AppCompatActivity {
-
-   /* SensorManager sensorManager;
-    ShakeDetector sd;
-    private Thread thread;*/
-
-
     private SensorManager mSensorManager;
     private float mAccel; // acceleration apart from gravity
     private float mAccelCurrent; // current acceleration including gravity
@@ -93,45 +79,14 @@ public class PPT extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        /*sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
-        sd = new ShakeDetector(this);
-        sd.setSensitivity(ShakeDetector.SENSITIVITY_HARD);
-        sd.start(sensorManager);*/
         setContentView(R.layout.activity_ppt);
         ((RelativeLayout)findViewById(R.id.layoutR)).setBackgroundColor(Color.parseColor("#eeff41"));
-        //final PPT myActivity = this;
 
-       /* thread=  new Thread(){
-            @Override
-            public void run(){
-                try {
-                    wait(2000);
-                }
-                catch(InterruptedException ex){
-                }
-
-                // TODO
-            }
-        };
-
-        thread.start();*/
         mSensorManager = (SensorManager) getSystemService(this.SENSOR_SERVICE);
         mSensorManager.registerListener(mSensorListener, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
         mAccel = 0.00f;
         mAccelCurrent = SensorManager.GRAVITY_EARTH;
         mAccelLast = SensorManager.GRAVITY_EARTH;
     }
-
-
-    //@Override public void hearShake() {
-
-        /*Toast.makeText(this, "Don't shake me, bro!", Toast.LENGTH_LONG).show();
-        sd.stop();
-        synchronized(thread){
-            thread.run();
-        }
-        sd.start(sensorManager);*/
-    //}
-
 }
 
