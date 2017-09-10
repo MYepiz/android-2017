@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marty.marcadora15.Main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/T1"
+        android:width="180dp"
+        android:text="PLAYER 1"
+        android:textSize="38dp"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/T2"
+        android:width="180dp"
+        android:text="PLAYER 2"
+        android:textSize="38dp"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/T1"
+        android:layout_alignBottom="@+id/T1"
+        android:layout_toEndOf="@+id/T1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/P1"
+        android:width="150dp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="125dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="108dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#212121"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/P2"
+        android:inputType="number"
+        android:width="150dp"
+        android:textAlignment="center"
+        android:text="0"
+        android:textSize="125dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignBaseline="@+id/P1"
+        android:layout_alignBottom="@+id/P1"
+        android:layout_toEndOf="@+id/T1"
+        android:textColor="#212121"/>
+
+    <Button
+        android:id="@+id/addP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/P1"
+        android:layout_alignStart="@+id/P1"
+        android:layout_below="@+id/P1"
+        android:layout_marginTop="13dp"
+        android:onClick="addPlayer1"
+        android:text="+"
+        android:textSize="110dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#fafafa"/>
+
+    <Button
+        android:id="@+id/addP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/addP1"
+        android:layout_alignBottom="@+id/addP1"
+        android:layout_alignEnd="@+id/P2"
+        android:layout_alignStart="@+id/P2"
+        android:onClick="addPlayer2"
+        android:text="+"
+        android:textSize="110dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#fafafa"/>
+
+    <Button
+        android:id="@+id/subsP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/addP1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/addP1"
+        android:layout_marginBottom="10dp"
+        android:onClick="subsPlayer1"
+        android:text="-----"
+        android:textSize="30dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="#fafafa"/>
+
+    <Button
+        android:id="@+id/subsP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/subsP1"
+        android:layout_alignBottom="@+id/subsP1"
+        android:layout_alignEnd="@+id/addP2"
+        android:layout_alignStart="@+id/addP2"
+        android:onClick="subsPlayer2"
+        android:text="-----"
+        android:textSize="30dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="#fafafa"/>
+
+</RelativeLayout>
