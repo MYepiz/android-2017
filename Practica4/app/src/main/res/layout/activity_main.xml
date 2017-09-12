@@ -12,32 +12,30 @@
         tools:layout_editor_absoluteX="22dp"
         tools:layout_editor_absoluteY="13dp">
 
+
         <EditText
             android:id="@+id/precio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="17dp"
+            android:layout_marginTop="23dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Precio"
+            android:inputType="number"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp"
-            tools:text="precio"
-            android:layout_below="@+id/cantidad"
-            android:layout_alignStart="@+id/cantidad" />
+            android:layout_below="@+id/textView3"
+            android:layout_alignStart="@+id/textView3" />
 
         <EditText
             android:id="@+id/cantidad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Cantidad"
+            android:inputType="number"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="83dp"
-            android:layout_alignParentTop="true"
-            android:layout_toStartOf="@+id/button"
-            android:layout_marginTop="17dp" />
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/textView"
+            android:layout_toStartOf="@+id/button" />
 
         <Button
             android:id="@+id/button"
@@ -51,6 +49,36 @@
             android:text="Button"
             tools:layout_editor_absoluteX="280dp"
             tools:layout_editor_absoluteY="447dp" />
+
+        <ImageView
+            android:id="@+id/coca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/precio"
+            android:layout_alignTop="@+id/button"
+            android:visibility="invisible"
+            app:srcCompat="@mipmap/cola" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/cantidad"
+            android:layout_marginTop="29dp"
+            android:text="Precio" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/cantidad"
+            android:layout_below="@+id/cantidad"
+            android:layout_marginTop="28dp"
+            android:text="Cantidad"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="142dp" />
+
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
