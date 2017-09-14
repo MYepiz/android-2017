@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marty.examenparcial1.parcial"
+    android:id="@+id/layrel">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Producción total: "
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginStart="19dp"
+    android:layout_marginTop="133dp"
+    android:textSize="17dp"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ProdTot"
+        android:inputType="number"
+        android:hint="0"
+        android:textSize="15dp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/ProdAct" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Producción actual: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="26dp"
+        android:textSize="17dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/rejasTotales"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ProdAct"
+        android:inputType="number"
+        android:hint="0"
+        android:textSize="15dp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <ImageButton
+        android:id="@+id/rejasTotales"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/manzana"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:onClick="calcularRejasTotales"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/rejasActuales"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/manzana"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:onClick="calcularRejasActuales"
+
+        android:layout_alignTop="@+id/ProdAct"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/mas5"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="43dp"
+        android:onClick="masCinco"
+        android:text="+5"
+        android:layout_below="@+id/ProdAct"
+        android:layout_alignEnd="@+id/textView" />
+
+    <Button
+        android:id="@+id/mas15"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/mas5"
+        android:layout_alignBottom="@+id/mas5"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/mas5"
+        android:onClick="masQuince"
+        android:text="+15" />
+
+    <Button
+        android:id="@+id/mas30"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/mas5"
+        android:layout_alignBottom="@+id/mas5"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/mas15"
+        android:onClick="masTreinta"
+        android:text="+30" />
+
+    <Button
+        android:id="@+id/mas50"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/mas30"
+        android:layout_alignBottom="@+id/mas30"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/mas30"
+        android:onClick="masCincuenta"
+        android:text="+50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Porcentaje: "
+        android:layout_marginTop="40dp"
+        android:textSize="17dp"
+        android:layout_below="@+id/mas50"
+        android:layout_alignStart="@+id/textView3"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Porcent"
+        android:text="Producción en porcentaje"
+        android:textSize="15dp"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignStart="@+id/mas15" />
+
+    <Button
+        android:id="@+id/btnPorc"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Porcent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:onClick="calcularPorcentajeActual"
+        android:text="CALCULAR" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mainmage"
+        android:layout_above="@+id/ProdTot"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp" />
+
+</RelativeLayout>
