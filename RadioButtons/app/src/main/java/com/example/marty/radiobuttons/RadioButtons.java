@@ -23,17 +23,21 @@ public class RadioButtons extends AppCompatActivity {
         ((RadioButton)findViewById(R.id.masculino)).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                (findViewById(R.id.text1)).setVisibility(View.VISIBLE);
-                (findViewById(R.id.text2)).setVisibility(View.VISIBLE);
-                (findViewById(R.id.text3)).setVisibility(View.VISIBLE);
+            if (b == true) {
+                    (findViewById(R.id.text1)).setVisibility(View.VISIBLE);
+                    (findViewById(R.id.text2)).setVisibility(View.VISIBLE);
+                    (findViewById(R.id.text3)).setVisibility(View.VISIBLE);
+                }
             }
         });
         ((RadioButton)findViewById(R.id.femenino)).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                (findViewById(R.id.text1)).setVisibility(View.VISIBLE);
-                (findViewById(R.id.text2)).setVisibility(View.VISIBLE);
-                (findViewById(R.id.text3)).setVisibility(View.INVISIBLE);
+            if (b == true) {
+                    (findViewById(R.id.text3)).setVisibility(View.GONE);
+                    (findViewById(R.id.text1)).setVisibility(View.VISIBLE);
+                    (findViewById(R.id.text2)).setVisibility(View.VISIBLE);
+                }
             }
         });
     }
