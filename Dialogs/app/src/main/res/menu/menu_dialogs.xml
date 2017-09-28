@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.marty.dialogs.Dialogs">
+    <item
+        android:id="@+id/alerta_basica"
+        android:orderInCategory="100"
+        android:title="@string/alerta_basica"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/alerta_login"
+        android:orderInCategory="100"
+        android:title="@string/alerta_login"
+        app:showAsAction="never" />
+</menu>
