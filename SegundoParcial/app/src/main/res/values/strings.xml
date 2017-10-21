@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">2doParcial</string>
+    <string name="loginBtn">Iniciar Sesión</string>
+    <string name="usuarioLbl">Usuario:</string>
+    <string name="contraLbl">Ingresar contraseña:</string>
+    <string name="inicioOpcion1">Leer placa</string>
+    <string name="inicioOpcion2">Vehículos afiliados</string>
+    <string name="inicioOpcion3">Acerca de...</string>
+    <string name="inicioOpcion4">Cerrar sesión</string>
+    <string name="desarrollador">Manuel Arturo Yépiz Delgado\n3548</string>
+    <string name="githubPerfil">github.com/MYepiz</string>
+    <string name="closeDialog">Cerrar</string>
+    <string name="perfilBtn">Ver perfil en Github</string>
+    <string name="githubLink">https://github.com/MYepiz</string>
+    <string name="nombre_transicion_imagen">imagen_compartida</string>
+    <string name="deudaBtn">Pagar deuda</string>
+    <string name="titleDeuda">Seleccione su forma de pago</string>
+
+    <string name="radioDeuda1">Efectivo</string>
+    <string name="radioDeuda2">Tarjeta de Débito o Crédito</string>
+    <string name="radioDeuda3">Cheque</string>
+    <string name="radioDeuda4">Vales de despensa</string>
+    <string name="radioDeuda5">Hipoteca</string>
+</resources>
