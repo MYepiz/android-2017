@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "995713482687",
+    "firebase_url": "https://notis-6242e.firebaseio.com",
+    "project_id": "notis-6242e",
+    "storage_bucket": "notis-6242e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995713482687:android:2424feb8f974a7b8",
+        "android_client_info": {
+          "package_name": "com.example.marty.notis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "995713482687-cpd5h6oat6ba8euia3pl1lmo1i2ga68t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.marty.notis",
+            "certificate_hash": "ce909e4c6fc96c39724e64c0c28f078b8be9d4db"
+          }
+        },
+        {
+          "client_id": "995713482687-c6h4e0rc5aa6q7ipe8fu8ph4sjk1u46s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHJkMj_FPkKE-6MAGq3ZCNm-CXLqCTAg4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "995713482687-c6h4e0rc5aa6q7ipe8fu8ph4sjk1u46s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
