@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marty.gafette.Index">
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/imageview_border"/>
+
+    <TextView
+        android:id="@+id/nombreCompleto"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Empleado: "
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sangre"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nombreCompleto"
+        android:layout_below="@+id/nombreCompleto"
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"
+        android:text="Tipo de sangre:" />
+
+    <TextView
+        android:id="@+id/direccion"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sangre"
+        android:layout_below="@+id/sangre"
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"
+        android:text="Dirección: " />
+
+    <Button
+        android:id="@+id/mapa"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/direccion"
+        android:layout_below="@+id/direccion"
+        android:layout_marginTop="30dp"
+        android:text="Ver en el mapa"
+        android:background="@color/colorAccent" />
+
+</RelativeLayout>
