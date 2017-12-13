@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.marty.pocketbolt.Inicio_Tienda">
+
+    <!-- TODO: Update blank fragment layout
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorHighlight"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/hello_store_fragment"
+        android:id="@+id/titulo" />-->
+
+    <com.yarolegovich.discretescrollview.DiscreteScrollView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titulo" />
+
+
+    <LinearLayout
+        android:id="@+id/selectedItem"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="0dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/banner">
+        <TextView
+            android:id="@+id/itemName"
+            android:padding="4dp"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:text="OPCION SELECCIONADA"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:ellipsize="marquee"/>
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:paddingTop="15dp"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="PRECIO"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/itemIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_add_circle_outline_black_36dp"
+            android:foregroundTint="@android:color/holo_green_light"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollCenter"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@+id/selectedItem"
+        android:layout_marginBottom="10dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <ExpandableListView
+            android:id="@+id/Categorias"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ExpandableListView>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_below="@+id/scrollCenter"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/search"
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="BUSCAR:"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_search_black_24dp" />
+    </LinearLayout>
+
+</RelativeLayout>

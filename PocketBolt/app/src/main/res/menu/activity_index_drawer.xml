@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="¡Obten más!">
+        <menu>
+            <item
+                android:id="@+id/store"
+                android:icon="@mipmap/ic_shop_black_24dp"
+                android:title="@string/tienda" />
+        </menu>
+    </item>
+
+    <item android:title="Conversiones">
+        <menu>
+            <item
+                android:id="@+id/distancias"
+                android:icon="@mipmap/ic_compare_arrows_black_24dp"
+                android:title="Distancias" />
+            <item
+                android:id="@+id/pesos"
+                android:icon="@mipmap/ic_fitness_center_black_24dp"
+                android:title="Pesos" />
+            <item
+                android:id="@+id/tiempo"
+                android:icon="@mipmap/ic_access_time_black_24dp"
+                android:title="Tiempo" />
+        </menu>
+    </item>
+
+    <item android:title="Eléctricos">
+        <menu>
+            <item
+                android:id="@+id/bomba_hp"
+                android:icon="@mipmap/ic_flash_on_black_24dp"
+                android:title="@string/hp_por_bomba" />
+            <item
+                android:id="@+id/mono_motor"
+                android:icon="@mipmap/ic_monofasic_motor_24dp"
+                android:title="@string/motor_monof_sico" />
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/ajustes_de_la_cuenta" />
+        </menu>
+    </item>
+
+    <item android:title="Almacenamiento">
+        <menu>
+            <item
+                android:id="@+id/savedFiles"
+                android:icon="@mipmap/ic_save_black_24dp"
+                android:title="Mis archivos" />
+            <item
+                android:id="@+id/sendFiles"
+                android:icon="@mipmap/ic_cloud_upload_black_24dp"
+                android:title="Subir resultados" />
+            <item
+                android:id="@+id/downloadFiles"
+                android:icon="@mipmap/ic_get_app_black_24dp"
+                android:title="Bajar resultados" />
+        </menu>
+    </item>
+
+</menu>

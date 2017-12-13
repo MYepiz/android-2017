@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">PocketBolt</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- HP BOMBA spinner -->
+    <string-array name="tipo_dato_array">
+        <item>Litros por segundo/Metros</item>
+        <item>Galones por minuto/Pies</item>
+    </string-array>
+
+    <!-- tienda -->
+    <string name="hello_store_fragment">¡Personaliza tu app, obtén todo lo que quieras, usa lo que necesites!</string>
+
+    <!-- help hp bomba -->
+    <string name="help_text_potencia_bomba">
+        LPS: Litros Por Segundo\n
+        M: Metros\n
+        GPM: Galones Por Minuto\n
+        FT: Pies\n
+        Q: Gasto en litros por segundo \n
+        CDT: Carga Dinámica Total \n
+        D. AGUA: Densidad del Agua \n
+        E. BOMBA: Eficiencia de la Bomba \n
+        HP: Caballos de fuerza \n\n
+        El resultado proporcionará la \n
+        potencia real que puede obtenerse \n
+        de motores comerciales, que cubran\n
+        las necesidades indicadas.</string>
+
+    <!-- Drawer options -->
+    <string name="tienda">Tienda</string>
+    <string name="hp_por_bomba">HP por Bomba</string>
+    <string name="motor_monof_sico">Motor Monofásico</string>
+    <string name="ajustes_de_la_cuenta">Ajustes de la cuenta</string>
+    <string name="drawer_title">PocketBolt: Menú de opciones</string>
+    <string name="cargar_archivo">Cargar archivo</string>
+    <string name="limpiar_pantalla">Limpiar pantalla</string>
+    <string name="guardar_config">Guardar configuración</string>
+    <string name="help_save_desc">Guardar datos</string>
+    <string name="help_clear_desc">Limpiar pantalla</string>
+    <string name="help_load_desc">Cargar datos</string>
+</resources>
